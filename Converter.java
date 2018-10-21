@@ -8,9 +8,6 @@ public class Converter extends JFrame{
 	JMenuBar menu;
 	JPanel panel;
 	TextArea textarea;
-	//FileInputStream fin;
-	//FileOutputStream fout;
-	//JFileChooser chooser;
 	
 	public Converter(){
 		gui();
@@ -69,7 +66,6 @@ public class Converter extends JFrame{
 			if(resValue==JFileChooser.APPROVE_OPTION){
 				File fileToSave = chooser.getSelectedFile();
 				try{
-			 //File path=chooser.getCurrentDirectory();
 			 String name=chooser.getName(fileToSave)+".txt"; 
 			 String f=fileToSave.getAbsolutePath();
 			 File file=new File(f,name);
